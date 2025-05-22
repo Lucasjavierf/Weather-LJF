@@ -2,13 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="./public/imgs/weather.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LJF Weather App</title>
   </head>
-  <body>
+  <body class="bg-">
+    <header>
+      <section class=" w-fit mx-auto mt-8">
+        <div class="text-center">
+          <div class="flex justify-center items-center gap-4">
+            <img src="./public/imgs/weather.png" alt="logo" class="w-16 h-16">
+            <h1 class="text-4xl font-bold"> WeatherApp LJF</h1>
+          </div>
+          <input  type="text" placeholder="Ingresa tu ciudad"  class="text-center mt-8 backdrop-blur-2xl focus:outline-2 rounded-2xl border-gray-400">
+        </div>
+      </section>
 
-    
+    </header>
+
+    <main>
+      <!-- ----------------------------------------------clima actual---------------------------------------------------- -->
+      <section class="w-74 h-80 mx-auto mt-8">
+        <div class="clima-actual flex flex-col justify-evenly items-center  backdrop-blur-2xl rounded-2xl h-80 w-72">
+          <h3 class="ciudad-nombre text-2xl font-bold">Ezeiza</h3>
+          <h2 class="temperatura text-5xl font-bold">12°G</h2>
+          <h3 class="condicion-clima text-2xl">cielo despejado</h3>
+          <h3 class="humedad text-lg">humedad: 79%</h3>
+          <h3 class="viento text-lg">viento</h3>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------------------clima por hora------------------------------------------------------- -->
+
+
+
+    </main>
+
   
     <script type="module" src="/src/main.js"></script>
   </body>

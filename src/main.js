@@ -25,16 +25,16 @@ function fetchDataApi() {
 
 let ciudadNombre = document.querySelector(".ciudad-nombre");
 let fecha = document.querySelector(".fecha")
-let cityTemp = document.querySelector(".temperatura");
-let cityCond = document.querySelector(".condicion-clima");
-let cityHumidity = document.querySelector(".humedad");
+let ciudadTemp = document.querySelector(".temperatura");
+let ciudadCond = document.querySelector(".condicion-clima");
+let ciudadHumedad = document.querySelector(".humedad");
 let velViento = document.querySelector(".viento")
 function DataDom(data) {
 	ciudadNombre.innerHTML = `${data.name}, ${data.sys.country}`;
     fecha.innerHTML = obtenerFecha();
-	cityTemp.innerHTML = `${Math.round(data.main.temp)}°c`;
-	cityCond.innerHTML = data.weather[0].description.toUpperCase();
-	cityHumidity.innerHTML = `Humedad: ${data.main.humidity}%`;
+	ciudadTemp.innerHTML = `${Math.round(data.main.temp)}°c`;
+	ciudadCond.innerHTML = data.weather[0].description.toUpperCase();
+	ciudadHumedad.innerHTML = `Humedad: ${data.main.humidity}%`;
 	velViento.innerHTML = `Viento: ${data.wind.speed}km/h`;
 }
 

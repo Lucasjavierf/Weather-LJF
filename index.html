@@ -14,31 +14,87 @@
             <img src="./public/imgs/weather.png" alt="logo" class="w-16 h-16">
             <h1 class="text-4xl font-bold"> WeatherApp LJF</h1>
           </div>
-          <input  type="text" placeholder="Ingresa tu ciudad"  class="text-center mt-8 backdrop-blur-2xl focus:outline-2 rounded-2xl border-gray-400">
+          <input type="text" id="ciudad" placeholder="Ingresa tu ciudad"
+            class="text-center mt-8 backdrop-blur-2xl focus:outline-2 rounded-2xl border-gray-400">
         </div>
       </section>
-
+  
     </header>
-
+  
     <main>
       <!-- ----------------------------------------------clima actual---------------------------------------------------- -->
       <section class="w-74 h-80 mx-auto mt-8">
         <div class="clima-actual flex flex-col justify-evenly items-center  backdrop-blur-2xl rounded-2xl h-80 w-72">
-          <h3 class="ciudad-nombre text-2xl font-bold">Ezeiza</h3>
-          <h2 class="temperatura text-5xl font-bold">12°G</h2>
-          <h3 class="condicion-clima text-2xl">cielo despejado</h3>
-          <h3 class="humedad text-lg">humedad: 79%</h3>
-          <h3 class="viento text-lg">viento</h3>
+          <h3 class="ciudad-nombre text-2xl font-bold"></h3>
+          <h4 class="fecha font-bold"></h4>
+          <h2 class="temperatura text-5xl font-bold"></h2>
+          <h3 class="condicion-clima text-2xl font-bold"></h3>
+          <h3 class="humedad text-lg font-bold"></h3>
+          <h3 class="viento text-lg font-bold"></h3>
         </div>
       </section>
-
+  
       <!-- ---------------------------------------------------clima por hora------------------------------------------------------- -->
-
-
-
-    </main>
+      <section class=" w-[80vw] mx-auto mt-8 md:flex justify-center">
+        <div
+          class="flex flex-col gap-8 items-center justify-center backdrop-blur-2xl rounded-2xl overflow-hidden md:w-3xl">
+          <h2 class="text-4xl font-bold p-4"> Pronostico por hora (hoy)</h2>
+  
+          <div class="flex w-full justify-evenly ">
+            <div class="overflow-hidden  p-4 space-y-4 font-semibold">
+              <p>00:00</p>
+              <span>
+                <p>15°G</p>
+              </span>
+            </div>
+            <div class="overflow-hidden  p-4 space-y-4 font-semibold">
+              <p>00:00</p>
+              <span>
+                <p>15°G</p>
+              </span>
+            </div>
+            <div class=" overflow-hidden p-4 space-y-4 font-semibold">
+              <p>00:00</p>
+              <span>
+                <p>15°G</p>
+              </span>
+            </div>
+            <div class=" overflow-hidden p-4 space-y-4 font-semibold">
+              <p>00:00</p>
+              <span>
+                <p>15°G</p>
+              </span>
+            </div>
+  
+  
+          </div>
+        </div>
+  
+      </section>
+  
+      <!-- --------------------------------------------------------Alerta-Meteorologico------------------------------------------- -->
+  
+      <section class="w-76 h-80 mx-auto mt-8">
+        <div class="text-center backdrop-blur-2xl rounded-2xl">
+          <h2 class="text-2xl font-bold p-4">
+            ALERTAS METEOROLÓGICAS
+          </h2>
+          <p>
+            ninguna activa en este momento
+          </p>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <div class="max-w-screen p-8 bg-black">
+      <h3 class="text-amber-50 text-xl text-center">
+        © 2025 - Mi App del Clima 
+      </h3>
+    </div>
+    
+  </footer>
 
   
     <script type="module" src="/src/main.js"></script>
-  </body>
+</body>
 </html>
